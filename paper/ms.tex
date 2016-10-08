@@ -1,7 +1,61 @@
 \documentclass[12pt]{article}
 
+% text definitions
+\newcommand{\acronym}[1]{\small{{#1}}}
+\newcommand{\project}[1]{\textsl{{#1}}}
+\newcommand{\gaia}{\project{Gaia}}
+\newcommand{\tgas}{\project{\acronym{TGAS}}}
+
+% math definitions
+
+% style
+\linespread{1.09}
+\sloppy
+\sloppypar
+\raggedbottom
+\frenchspacing
+
 \begin{document}
 
-Hello World.
+\section*{Finding old, disrupted stellar systems in \\ \textsl{Gaia TGAS}}
+
+\noindent
+APW \& DWH
+
+\paragraph{Abstract:}
+% context
+The first data release from the \gaia\ Mission includes the
+\tgas\ Catalog, which---despite being low-precision and small relative
+to \gaia's end-of-mission data products---is the most precise, large
+catalog of proper motions and parallaxes ever made.
+This size and precision permit the discovery of kinematic structures
+in the Milky Way that could not have been found previously.
+% aims
+We aim to find disrupting stellar systems by identifying pairs of
+stars that have high probability of being on orbits that intersected
+at a space-time event (a $3+1$-dimensional origin event) at some time in the past.
+The analysis is complicated by the noisy parallax and proper-motion
+measurements, and the heterogeneous radial-velocity data; even stars
+that \emph{do} have a common origin event might not appear to, given
+the noise.
+% method
+Our method involves integrating phase-space points backwards in time
+in a model of the Milky Way gravitational potential, accounting for
+non-trivial posterior beliefs about phase-space by integrating many
+posterior samples per star.
+Pairs with common origin events will appear in our analysis as
+having---at some point in the past---substantial overlap of their sets
+of integrated phase-space points.
+We assess the false-positive rate and set thresholds by, among other things, integrating
+forwards, finding stars that will intersect in the future.
+% results
+From a parent sample of YYY stars in \tgas\ with radial-velocity
+measurements, and making conservative cuts, we find XXX pairs with
+common origin events.
+These stars have ZZZ properties and appear to be YYY.
+
+\section{Introduction}
+
+Whatevs.
 
 \end{document}
